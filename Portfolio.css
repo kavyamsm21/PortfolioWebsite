@@ -1,0 +1,110 @@
+/*---Google Form---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*---Varibles CSS---*/
+:root {
+    --primary-color: #d3c1c1;
+    --primary-shade: #f8a01d;
+    --secondary-color: #b39999;
+    --secondary-shade: rgb(27, 26, 26);
+    --accent-color: rgb(221,123,32);
+}
+
+.logo {
+    color: rgb(221, 123, 32);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header section*/
+header {
+    background: rgb(29, 28, 28);
+    background: linear-gradient(90deg rgb(192, 7, 7) 0%,
+            rgb(8, 5, 5) 35%, rgb(47, 15, 83)100%);
+    background: linear-gradient(to right, rgb(32, 31, 31), rgb(83, 80, 80), rgb(37, 35, 35));
+    color: var(--primary-color);
+}
+
+.navbar {
+    padding: 30px 0;
+}
+
+.content {
+    height: 90vh;
+    position: relative;
+}
+
+span {
+    color: #d2985e
+}
+
+ul li a {
+    margin: 0 10px;
+    padding: 0 5px;
+    color: var(--accent-color);
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li a::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.6s ease;
+}
+
+ul li a:hover::before {
+    width: 100%;
+}
+
+
+
+h1,
+p {
+    font-family: 'poppins', sans-serif;
+}
+
+
+.btn {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    color: var(--secondary-color);
+    padding: 2px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-shade);
+    border: 2px solid var(--accent-color);
+}
+
